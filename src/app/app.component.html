@@ -1,0 +1,6 @@
+<p class='boundary'>app component starts</p>
+<h1>HTTP SERVICE</h1>
+<button (click)='showData(); show=true'>Fetch Data from Remote</button>
+<button (click)='setData(); show=true'>Post Data to Remote</button>
+<p *ngIf='show'>{{data | json}}</p>
+<p class='boundary'>app component ends</p>

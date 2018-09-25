@@ -1,18 +1,21 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { FetchDataService } from  './fetch-data.service';
 import { AppComponent } from './app.component';
-import { TestComponent } from './test/test.component';
+
+
+
 
 @NgModule({
   declarations: [
-    AppComponent,
-    TestComponent
+    AppComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,FormsModule,HttpClientModule
   ],
-  providers: [],
+  providers: [FetchDataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
