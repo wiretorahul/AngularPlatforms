@@ -1,0 +1,14 @@
+<!--this is template of my app-component or root component, everything goes here-->
+
+<p>app component starts</p>
+
+<h1>Custom Directive</h1>
+<div id='myBox'>
+    <div class='container' appHide [check]='status'>
+        I am the div on which directive is applied... Hover over Me for fun !!
+    </div>
+
+</div>
+
+<button type="" class='btn-danger' (click)="changeStatus()">{{buttonLabel}}</button>
+<p>app component ends</p>

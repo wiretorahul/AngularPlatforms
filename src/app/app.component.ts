@@ -6,5 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'AngularRoot';
+  status = true;
+  buttonLabel = 'show';
+  changeStatus() {
+    this.status = !this.status;
+    if (this.buttonLabel == 'show') {
+      this.buttonLabel = 'hide';
+    } else if (this.buttonLabel == 'hide') {
+      this.buttonLabel = 'show';
+    }
+  }
 }
