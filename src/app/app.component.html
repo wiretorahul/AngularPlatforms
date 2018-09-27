@@ -1,0 +1,29 @@
+<!--this is template of my app-component or root component, everything goes here-->
+
+<p>app component starts</p>
+<!--we will learn Data-Bindings here-->
+<h1>Interpolation :</h1> <br>
+<div>
+    Name is coming from ts file using Interpolation : {{name}}<br>
+</div>
+<h1>Property Binding</h1> : <br>
+
+<button [disabled]='false'>ClickMe1</button>
+<button [disabled]='isCorrect'>ClickMe2</button>
+<div>
+    Above button's disabled property is bounded with the expression,expression may contain anything that is compiled by angular engine
+    <br>
+</div>
+
+<h1>Event Binding</h1> : <br>
+<button (click)="displayMyName()">Click Me</button>
+<div>
+    Above button is binding the click event to the method of class
+</div>
+
+<h1>Two Way Binding</h1> : <br> Password : <input type="text" [(ngModel)]='password'>
+<div>
+    Oh yes two way data binding is working - {{password}}
+</div>
+
+<p>app component ends</p>
