@@ -1,0 +1,44 @@
+<!--this is template of my app-component or root component, everything goes here-->
+
+<p class='boundary'>app component starts</p>
+<!--we will learn styling here-->
+
+<h1>Styling Angular Components</h1>
+
+<h2>Class Binding : [class.ClassName]='expression'</h2>
+<p [class.special]='checkSpecial()'>I am unique</p>
+
+<h2>Style Binding : [style.PropertyName]='value'</h2>
+
+<p [style.background-color]='"green"'>I am eco-friendly</p>
+
+<h2>ngClass Directive : [ngClass]='object'</h2>
+<p [ngClass]='classConfig'>So many classes applied on me</p>
+
+<h2>ngStyle Directive : [ngStyle]='object'</h2>
+<p [ngStyle]='styleConfig'>So many styles applied on me</p>
+
+<h1 style='margin-top:80px'>Useful Directives</h1>
+<h2>*ngIf</h2>
+<p *ngIf='true'>I am visible inside ngIf</p>
+<p *ngIf='status'>I am not visible inside ngIf due to false value in class</p>
+<p *ngIf='checkSpecial()'>I am visible inside ngIf due to value returned by function</p>
+
+<h2>*ngFor</h2>
+<p>Hardcoded array</p>
+<p *ngFor='let x of [1,2,3]'>{{x}}</p>
+
+
+<p>Array from class</p>
+<p *ngFor='let x of numbers'>{{x}}</p>
+
+<p>Anything can be repeated</p>
+<div *ngFor='let x of [1,2]'>
+    <ul>
+        <li>orange</li>
+        <li>apple</li>
+    </ul>
+</div>
+
+
+<p class='boundary'>app component ends</p>

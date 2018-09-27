@@ -1,0 +1,18 @@
+p.boundary {
+    background-color: yellow;
+    color: red;
+}
+
+div {
+    border: solid 2px black;
+    padding: 2px;
+    margin: 2px;
+}
+
+.special {
+    color: red;
+}
+
+.verySpecial {
+    border: solid 1px black;
+}
