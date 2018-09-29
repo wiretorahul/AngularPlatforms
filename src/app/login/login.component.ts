@@ -9,7 +9,7 @@ export class LoginComponent implements OnInit {
 
   constructor() { }
   login = { "name": " ", "password": "" };
-  credentials = { "name": 'sourabh', "password": 'sourabh123' };
+  credentials = { "name": 'Harry', "password": 'harry123' };
   submitted = false;
   onSubmit() {
     if (this.login.name === this.credentials.name && this.login.password === this.credentials.password) {
