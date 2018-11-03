@@ -9,6 +9,7 @@ import {Router, ActivatedRoute} from '@angular/router'
 export class ContactdetailComponent implements OnInit {
 
   myParams = {};
+  y ="Rahul";
 
   constructor(private ar : ActivatedRoute) {
     this.ar.params.subscribe(params => this.myParams = params);
